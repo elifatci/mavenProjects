@@ -2,6 +2,7 @@ package maven_4;
 
 import Methods.BeforeClass;
 import Methods.ReusableMethods;
+import org.checkerframework.checker.units.qual.K;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -9,6 +10,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.devtools.v85.page.Page;
+
+import java.util.concurrent.TimeUnit;
 
 public class T1 extends BeforeClass {
 
@@ -24,7 +27,10 @@ public class T1 extends BeforeClass {
     // 4. Scroll down to footer
     WebElement homePage=driver.findElement(By.xpath("//div[@class='logo pull-left']"));
     Assert.assertTrue(homePage.isDisplayed());
-    homePage.sendKeys(Keys.PAGE_DOWN);
+    ReusableMethods.Wait(2);
+
+
+
 
 
 }
@@ -32,6 +38,7 @@ public class T1 extends BeforeClass {
     public void test03(){
         //5. Verify text 'SUBSCRIPTION'
     WebElement homePage=driver.findElement(By.xpath("//div[@class='logo pull-left']"));
+    homePage.sendKeys(Keys.PAGE_DOWN);
     WebElement text= driver.findElement(By.xpath("//h2[text()='Subscription']"));
     String expectedText="SUBSCRIPTION";
     String actualText=text.getText();
