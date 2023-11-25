@@ -36,9 +36,10 @@ public class T1 extends BeforeClass {
 }
 @Test
     public void test03(){
+    JavascriptExecutor jse = (JavascriptExecutor) driver;
         //5. Verify text 'SUBSCRIPTION'
     WebElement homePage=driver.findElement(By.xpath("//div[@class='logo pull-left']"));
-    homePage.sendKeys(Keys.PAGE_DOWN);
+    jse.executeScript("arguments[0].scrollIntoView(true);",homePage);
     WebElement text= driver.findElement(By.xpath("//h2[text()='Subscription']"));
     String expectedText="SUBSCRIPTION";
     String actualText=text.getText();
