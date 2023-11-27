@@ -49,6 +49,7 @@ public class T3 {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
         //2. Navigate to url 'http://automationexercise.com'
         driver.get("http://automationexercise.com");
         //3. Verify that home page is visible successfully

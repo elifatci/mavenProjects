@@ -14,6 +14,7 @@ public class T2 {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
         //1. “https://www.saucedemo.com” Adresine gidin
         driver.get("https://www.saucedemo.com");
         //2. Username kutusuna “standard_user” yazdirin
