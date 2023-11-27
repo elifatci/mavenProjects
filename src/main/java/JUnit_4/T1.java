@@ -24,10 +24,6 @@ public class T1 extends BeforeClass {
     Assert.assertTrue(homePage.isDisplayed());
     ReusableMethods.Wait(2);
 
-
-
-
-
 }
 @Test
     public void test03(){
