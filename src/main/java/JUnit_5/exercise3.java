@@ -31,6 +31,7 @@ public class exercise3 {
         //2. Navigate to url 'http://automationexercise.com'
         driver.get("http://automationexercise.com");
         //3. Verify that home page is visible successfully
+
         WebElement homePage=driver.findElement(By.id("slider-carousel"));
       Assert.assertTrue(homePage.isDisplayed());
         //4. Click on 'Signup / Login' button

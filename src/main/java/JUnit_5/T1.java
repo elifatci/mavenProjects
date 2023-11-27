@@ -17,6 +17,7 @@ public class T1 extends TestBase {
         //3. Verify that home page is visible successfully
         WebElement homePage = driver.findElement(By.id("slider-carousel"));
         Assert.assertTrue(homePage.isDisplayed());
+
         //4. Click 'View Product' for any product on home page
         WebElement view = driver.findElement(By.xpath("(//a[text()='View Product'])[1]"));
         js.executeScript("arguments[0].click();", view);
