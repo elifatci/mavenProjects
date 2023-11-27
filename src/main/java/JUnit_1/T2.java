@@ -31,6 +31,7 @@ public class T2 {
             System.out.println("newUser test is FAİLED");
         }
         //6. Enter name and already registered email address
+
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("elif");
         driver.findElement(By.xpath("(//input[@name='email'])[2]")).sendKeys("ee@dd.com");
         //7. Click 'Signup' button

@@ -14,6 +14,7 @@ public class T1 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         //2. Navigate to url 'http://automationexercise.com'
+
         driver.get("http://automationexercise.com");
         //3. Verify that home page is visible successfully
         WebElement homePage = driver.findElement(By.xpath("//img[@src='/static/images/home/logo.png']"));
