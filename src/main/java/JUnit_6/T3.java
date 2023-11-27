@@ -15,6 +15,7 @@ public class T3 extends TestBase {
     public void dropdownTest() {
 
         // https://the-internet.herokuapp.com/dropdown adresine gidin.
+
         driver.get("https://the-internet.herokuapp.com/dropdown");
         //1.Index kullanarak Seçenek 1’i (Option 1) seçin ve yazdırın
         WebElement selection = driver.findElement(By.id("dropdown"));

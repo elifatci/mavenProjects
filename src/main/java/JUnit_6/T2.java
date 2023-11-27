@@ -11,6 +11,7 @@ public class T2 extends TestBase {
     @Test
     public void dropdownTest01(){
         //1. http://zero.webappsecurity.com/ Adresine gidin
+
         driver.get("http://zero.webappsecurity.com/");
         //2. Sign in butonuna basin
         driver.findElement(By.id("signin_button")).click();
