@@ -52,6 +52,7 @@ public class T1 {
     public void allProducts() {
         //4. Click on 'Products' button
         //5. Verify user is navigated to ALL PRODUCTS page successfully
+
         driver.findElement((By.xpath("//a[@href='/products']"))).click();
         WebElement allproduct = driver.findElement(By.xpath("//h2[@class='title text-center']"));
         Assert.assertTrue(allproduct.isDisplayed());
