@@ -10,6 +10,7 @@ public class T3 extends TestBase {
     @Test
     public void iframeTest01(){
         //1 ) https://the-internet.herokuapp.com/iframe adresine gidin.
+
         driver.get("https://the-internet.herokuapp.com/iframe");
         //2 )- “An IFrame containing….” textinin erisilebilir oldugunu test edin ve
         //konsolda yazdirin.

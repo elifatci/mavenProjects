@@ -13,6 +13,7 @@ public class T5 extends TestBase {
     public void test01(){
 
         //● https://the-internet.herokuapp.com/windows adresine gidin.
+
         driver.get("https://the-internet.herokuapp.com/windows");
         //● Sayfadaki textin “Opening a new window” olduğunu doğrulayın.
         WebElement text= driver.findElement(By.tagName("h3"));

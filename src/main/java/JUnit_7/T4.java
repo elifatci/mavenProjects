@@ -11,6 +11,7 @@ public class T4 extends TestBase {
     @Test
     public void test01() {
         //1) http://demo.guru99.com/test/guru99home/ sitesine gidiniz
+
         driver.get("http://demo.guru99.com/test/guru99home/");
         //2) sayfadaki iframe sayısını bulunuz.
         List<WebElement> iframeList = driver.findElements(By.tagName("iframe"));

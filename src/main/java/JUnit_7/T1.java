@@ -11,6 +11,7 @@ public class T1 extends TestBase {
     public void test01() {
         //1. Test
         //- https://the-internet.herokuapp.com/javascript_alerts adresine gidin
+
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
         //- 1.alert'e tiklayin
         driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();

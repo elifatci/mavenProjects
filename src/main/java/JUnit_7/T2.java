@@ -12,6 +12,7 @@ public class T2 extends TestBase {
 
         //1- https://the-internet.herokuapp.com/basic_auth
         //sayfasina gidin
+
         driver.get("https://the-internet.herokuapp.com/basic_auth");
         //2- asagidaki yontem ve test datalarini kullanarak
         //authentication’i yapin
