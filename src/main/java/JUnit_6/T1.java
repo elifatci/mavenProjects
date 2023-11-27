@@ -1,12 +1,10 @@
-package maven_6;
+package JUnit_6;
 
-import Methods.ReusableMethods;
 import Methods.TestBase;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 public class T1 extends TestBase {

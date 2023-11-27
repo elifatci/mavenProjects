@@ -1,4 +1,4 @@
-package maven_6;
+package JUnit_6;
 
 import Methods.TestBase;
 import org.junit.Assert;

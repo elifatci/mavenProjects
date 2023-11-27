@@ -1,4 +1,4 @@
-package maven_3;
+package JUnit_3;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;

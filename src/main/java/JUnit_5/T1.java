@@ -1,6 +1,5 @@
-package maven_5;
+package JUnit_5;
 
-import Methods.ReusableMethods;
 import Methods.TestBase;
 import org.junit.Assert;
 import org.junit.Test;

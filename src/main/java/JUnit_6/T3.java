@@ -1,4 +1,4 @@
-package maven_6;
+package JUnit_6;
 
 import Methods.ReusableMethods;
 import Methods.TestBase;
@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class T3 extends TestBase {

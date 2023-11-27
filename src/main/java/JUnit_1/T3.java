@@ -1,4 +1,4 @@
-package maven_1;
+package JUnit_1;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package maven_4;
+package JUnit_4;
 
 import Methods.ReusableMethods;
 import Methods.TestBase;
@@ -6,7 +6,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.*;
 
-import java.sql.Driver;
 import java.util.List;
 
 public class T3 extends TestBase {

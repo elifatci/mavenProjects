@@ -1,4 +1,4 @@
-package maven_4;
+package JUnit_4;
 
 import Methods.ReusableMethods;
 import Methods.TestBase;

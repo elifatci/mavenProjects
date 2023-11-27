@@ -1,17 +1,12 @@
-package maven_4;
+package JUnit_4;
 
 import Methods.BeforeClass;
 import Methods.ReusableMethods;
-import org.checkerframework.checker.units.qual.K;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v85.page.Page;
-
-import java.util.concurrent.TimeUnit;
 
 public class T1 extends BeforeClass {
 

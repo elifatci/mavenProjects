@@ -1,4 +1,4 @@
-package maven_5;
+package JUnit_5;
 
 import Methods.TestBase;
 import org.junit.Assert;

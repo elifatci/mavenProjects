@@ -1,4 +1,4 @@
-package maven_7;
+package JUnit_7;
 
 import Methods.TestBase;
 import org.junit.Test;

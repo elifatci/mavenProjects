@@ -1,11 +1,10 @@
-package maven_7;
+package JUnit_7;
 
 import Methods.TestBase;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
 
 import java.util.Set;
 
