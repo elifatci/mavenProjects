@@ -30,7 +30,8 @@ public class T3 extends TestBase {
         System.out.println(select.getFirstSelectedOption().getText());
         //4.Tüm dropdown değerleri(value) yazdırın
         List<WebElement> optionList = select.getOptions();
-        System.out.println(ReusableMethods.strListeOlustur(optionList));
+
+        //System.out.println(ReusableMethods.strListeOlustur(optionList));
         //5. Dropdown’un boyutunun 3 olduğunu test edin
         Assert.assertEquals(3, optionList.size());
     }
