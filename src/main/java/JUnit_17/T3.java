@@ -41,5 +41,6 @@ public class T3 extends TestBase {
         List<WebElement> sutunElementleri=driver.findElements(By.xpath("(//*[@class='rt-tr-group'])[1]//*[@class='rt-td']"));
         System.out.println("Sutun sayisi: "+sutunElementleri.size());
 
+
     }
 }
