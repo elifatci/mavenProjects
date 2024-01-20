@@ -20,7 +20,7 @@ public class T1 extends BeforeClass {
     public void test02(){
     //3. Verify that home page is visible successfully
     // 4. Scroll down to footer
-    WebElement homePage=driver.findElement(By.xpath("//div[@class='logo pull-left']"));
+    WebElement homePage= driver.findElement(By.xpath("//div[@class='logo pull-left']"));
     Assert.assertTrue(homePage.isDisplayed());
     ReusableMethods.Wait(2);
 
@@ -29,7 +29,7 @@ public class T1 extends BeforeClass {
     public void test03(){
     JavascriptExecutor jse = (JavascriptExecutor) driver;
         //5. Verify text 'SUBSCRIPTION'
-    WebElement homePage=driver.findElement(By.xpath("//div[@class='logo pull-left']"));
+    WebElement homePage= driver.findElement(By.xpath("//div[@class='logo pull-left']"));
     jse.executeScript("arguments[0].scrollIntoView(true);",homePage);
     WebElement text= driver.findElement(By.xpath("//h2[text()='Subscription']"));
     String expectedText="SUBSCRIPTION";
@@ -41,7 +41,7 @@ public class T1 extends BeforeClass {
     //6. Enter email address in input and click arrow button
     WebElement email= driver.findElement(By.id("susbscribe_email"));
     email.sendKeys("ee@ee.com");
-   WebElement button=driver.findElement(By.xpath("//i[@class='fa fa-arrow-circle-o-right']"));
+   WebElement button= driver.findElement(By.xpath("//i[@class='fa fa-arrow-circle-o-right']"));
    button.click();
     ReusableMethods.Wait(3);
     //7. Verify success message 'You have been successfully subscribed!' is visible

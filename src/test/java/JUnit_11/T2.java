@@ -23,7 +23,7 @@ public class T2 extends TestBase {
         driver.get("http://automationexercise.com");
         //3. Verify that home page is visible successfully
         WebElement homePage = driver.findElement(By.xpath("(//div[@class='carousel-inner'])[1]"));
-        assertTrue(homePage.isDisplayed());
+        Assert.assertTrue(homePage.isDisplayed());
         //4. Add products to cart
         WebElement product = driver.findElement(By.xpath("(//a[@class='btn btn-default add-to-cart'])[1]"));
         js.executeScript("arguments[0].click();", product);
@@ -36,7 +36,7 @@ public class T2 extends TestBase {
         driver.findElement(By.xpath("(//i[@class='fa fa-shopping-cart'])[1]")).click();
         //6. Verify that cart page is displayed
         WebElement cartPage = driver.findElement(By.className("active"));
-        assertTrue(cartPage.isDisplayed());
+        Assert.assertTrue(cartPage.isDisplayed());
         List<WebElement> productList = driver.findElements(By.xpath("//td[@class='cart_product']"));
         List<String> strList = new ArrayList<>();
         for (WebElement each : productList) {

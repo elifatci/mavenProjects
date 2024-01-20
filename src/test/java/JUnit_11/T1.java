@@ -23,7 +23,7 @@ public class T1 extends TestBase {
         driver.get("http://automationexercise.com");
         //3. Verify that home page is visible successfully
         WebElement homePage= driver.findElement(By.xpath("(//div[@class='carousel-inner'])[1]"));
-        assertTrue(homePage.isDisplayed());
+        Assert.assertTrue(homePage.isDisplayed());
         //4. Click 'Signup / Login' button
         driver.findElement(By.xpath("//i[@class='fa fa-lock']")).click();
         //5. Fill email, password and click 'Login' button
@@ -32,7 +32,7 @@ public class T1 extends TestBase {
         driver.findElement(By.xpath("(//button[@type='submit'])[1]")).click();
         //6. Verify 'Logged in as username' at top
         WebElement text= driver.findElement(By.xpath("//i[@class='fa fa-user']"));
-        assertTrue(text.isDisplayed());
+        Assert.assertTrue(text.isDisplayed());
         //7. Add products to cart
         ReusableMethods.Wait(3);
         js.executeScript("arguments[0].scrollIntoView(true);", text);
@@ -45,12 +45,12 @@ public class T1 extends TestBase {
         driver.findElement(By.xpath("//i[@class='fa fa-shopping-cart']")).click();
         //9. Verify that cart page is displayed
         WebElement cartPage= driver.findElement(By.className("active"));
-        assertTrue(cartPage.isDisplayed());
+        Assert.assertTrue(cartPage.isDisplayed());
         //10. Click Proceed To Checkout
         driver.findElement(By.xpath("//a[text()='Proceed To Checkout']")).click();
         //11. Verify Address Details and Review Your Order
         WebElement adressDetails= driver.findElement(By.id("address_delivery"));
-        assertTrue(adressDetails.isDisplayed());
+        Assert.assertTrue(adressDetails.isDisplayed());
         //12. Enter description in comment text area and click 'Place Order'
         driver.findElement(By.xpath("//textarea[@class='form-control']")).sendKeys("thank u!");
         driver.findElement(By.partialLinkText("Order")).click();

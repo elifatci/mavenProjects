@@ -28,5 +28,6 @@ public class T3 extends TestBase {
         //7. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
         WebElement text= driver.findElement(By.xpath("(//h2)[1]"));
         Assert.assertTrue(text.isDisplayed());
+        driver.quit();
     }
 }
