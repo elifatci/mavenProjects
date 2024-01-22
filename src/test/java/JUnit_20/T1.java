@@ -25,7 +25,7 @@ public class T1 {
         driver.findElement(By.cssSelector("#menu-item-40")).click();
         //4) Now click on Home menu button
         driver.findElement(By.linkText("Home")).click();
-        //5) Test whether the Home page has Three Sliders only
+        //5) Test whether the Home page has three arrivals only
         List<WebElement> sliders=driver.findElements(By.cssSelector(".row_inner_wrapper"));
         if (sliders.size()==3){
             System.out.println("home page has Three Sliders");
