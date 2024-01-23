@@ -1,5 +1,6 @@
 package JUnit_21;
 
+import Methods.ReusableMethods;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +23,7 @@ public class T1 {
         driver.findElement(By.cssSelector("#menu-item-40")).click();
         //4) Now click on Home menu button
         driver.findElement(By.linkText("Home")).click();
-        Thread.sleep(5000);
+        ReusableMethods.Wait(3);
         //5) Test whether the Home page has Three Arrivals only
         List<WebElement> sliders=driver.findElements(By.className("woocommerce-LoopProduct-link"));
         int expectedSize=3;
